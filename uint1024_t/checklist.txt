@@ -1,4 +1,4 @@
-conversions from number system +
-addition +
-multiplication +
-subtraction +
+finished conversions from number system +
+finished addition +
+finished multiplication +
+finished subtraction +
