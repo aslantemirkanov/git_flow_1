@@ -4,6 +4,22 @@
 #define IN 1
 #define OUT 0
 
+int lnCount() {
+    FILE *file;
+    file = fopen("test.txt", "r");
+    int chr, lineCount;
+    if ((chr = getc(file)) != EOF) {
+        lineCount = 1;
+        while ((chr = getc(file)) != EOF)
+            if (chr == '\n')
+                lineCount++;
+    } else {
+        lineCount = 0;
+    }
+    printf("lines %d\n", lineCount);
+    fclose(file);
+}
+
 int main(int argc, char *argv[]){
     FILE *file;
     file = fopen("test.txt", "r");
