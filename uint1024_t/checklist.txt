@@ -1,3 +1,4 @@
-finished line count +
-finished litter count +
-word count
+conversions from number system
+addition
+multiplication
+subtraction
