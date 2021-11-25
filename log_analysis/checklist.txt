@@ -1,4 +1,4 @@
 error count started
 max time window of requests
 conversion date to sec started
-log print str
+log print str started
