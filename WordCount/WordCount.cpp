@@ -21,12 +21,15 @@ int lnCount() {
 }
 
 int litCount() {
+    FILE *file;
+    file = fopen("test.txt", "r");
     long litterCount;
     litterCount = 0;
     int chr;
     while ((chr = getc(file)) != EOF)
         ++litterCount;
     printf("bytes %ld\n", litterCount);
+    fclose(file);
 }
 
 int main(int argc, char *argv[]){
